@@ -43,12 +43,20 @@ body {
   font-size: 1.1rem;
 }
 
-.golden-top {
-  border-top: 5px solid var(--metallic-gold);
+h1 {
+  color: var(--midnight-blue);
 }
 
-.display-5 {
-  font-size: 2.75;
+.letter-spaced {
+  letter-spacing: 2px;
+}
+
+.slab {
+  font-family: "Golos Text", sans-serif;
+}
+
+.golden-top {
+  border-top: 5px solid var(--metallic-gold);
 }
 
 /* Header ------------------------------------------ */
@@ -79,7 +87,6 @@ body {
 }
 
 /* Backgrounds ----------------------------------- */
-/* ND background colors ------------------- */
 .bg-midnight-blue {
   background-color: var(--midnight-blue) !important;
 }
@@ -94,4 +101,9 @@ body {
 
 .bg-gold {
   background-color: var(--nd-gold);
+}
+
+/* Utility Classes ------------------------------- */
+.display-5 {
+  font-size: 2.75rem;
 }
