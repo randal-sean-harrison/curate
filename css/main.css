@@ -3,11 +3,13 @@
   --midnight-blue: #0c2340;
   --navy-blue: #143865;
   --nd-footer-blue: #143865;
+  --metallic-gold: #ae9142;
+  --bright-yellow: #ffcf01;
   --bright-blue: #007bff;
   --nd-dark-blue: #0c223f;
   --nd-blue: #0d2b58;
   --light-grey-body: #fafafa;
-  --ghost-white: #f5f5fA;
+  --ghost-white: #f5f5fa;
   --alice-blue: aliceblue;
   --footer-slate: #e6e8f1;
   --white: white;
@@ -36,14 +38,22 @@ html {
 }
 
 body {
-  font-family: 'Figtree', Helvetica, Arial, sans-serif;
+  font-family: "Figtree", Helvetica, Arial, sans-serif;
   color: var(--graphite);
   font-size: 1.1rem;
 }
 
-
 .golden-top {
   border-top: 5px solid var(--metallic-gold);
+}
+
+.display-5 {
+  font-size: 2.75;
+}
+
+/* Header ------------------------------------------ */
+.home-link .curate-nd-logo {
+  width: 250px;
 }
 
 /* Colors ------------------------------------------ */
@@ -59,61 +69,14 @@ body {
   color: var(--gold);
 }
 
-/* .metallic-gold {
-  color: var(--metallic-gold);
+.white {
+  fill: #fff;
 }
 
-.bright-yellow {
-  color: var(--bright-yellow);
+.yellow {
+  fill: #dcb438;
+  stroke-width: 0.75;
 }
-
-.light-yellow {
-  color: var(--light-yellow);
-}
-
-.cyan {
-  color: var(--cyan);
-}
-
-.maroon {
-  color: var(--maroon);
-}
-
-.bright-red {
-  color: var(--bright-red);
-}
-
-.olive-green {
-  color: var(--olive-green);
-}
-
-.moss-green {
-  color: var(--moss-green);
-}
-
-.forest-green {
-  color: var(--forest-green);
-}
-
-.dark-brown {
-  color: var(--dark-brown);
-}
-
-.plum {
-  color: var(--plum);
-}
-
-.brown {
-  color: var(--brown);
-}
-
-.chocolate {
-  color: var(--chocolate) !important;
-}
-
-.light-slate {
-  color: var(--light-slate);
-} */
 
 /* Backgrounds ----------------------------------- */
 /* ND background colors ------------------- */

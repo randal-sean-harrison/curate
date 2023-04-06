@@ -2,38 +2,17 @@
    <footer id="main-page-footer">
       <div class="row p-0">
          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 text-dark pt-5 pb-2 px-5">
-            <p class="display-4 mb-4"><a class="text-white" href="https://learning.nd.edu/" target="_blank">ND
-                  Learning</a>
-            </p>
+            <p class="display-5 mb-4"><a class="text-white" href="https://learning.nd.edu/" target="_blank">ND
+                  Learning</a></p>
             <p class="text-muted mb-1 opacity-5">
-               <span class="text-uppercase">Office of Digital Learning</span><br />
-               935 Flanner Hall<br />Notre Dame, IN 46556-5692
+               <span class="text-uppercase">Hesburgh Library</span><br />Notre Dame, IN 46556
             </p>
-            <p class="mt-3"><a class="text-white" href="mailto:learning@nd.edu">learning@nd.edu</a> | <span
-                  class="text-muted">574-631-9146</span></p>
-            <ul class="list-group list-group-horizontal mt-3 mb-4 justify-content-left">
-               <li class="list-group-item bg-transparent border-0 px-2 text-center" data-toggle="tooltip"
-                  data-placement="top" title="Twitter">
-                  <a href="https://twitter.com/learningND" class="text-white" target="_blank"><i
-                        class="fab fa-twitter"></i></a>
-               </li>
-               <li class="list-group-item bg-transparent border-0 px-2 text-center" data-toggle="tooltip"
-                  data-placement="top" title="Facebook">
-                  <a href="https://www.facebook.com/learningND" class="text-white" target="_blank"><i
-                        class="fab fa-facebook-f"></i></a>
-               </li>
-               <li class="list-group-item bg-transparent border-0 px-2 text-center" data-toggle="tooltip"
-                  data-placement="top" title="Instagram">
-                  <a href="https://www.instagram.com/ndlearning/" class="text-white" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-               </li>
-            </ul>
+            <p class="mt-3"><a class="text-white" href="mailto:learning@nd.edu">curate@nd.edu</a></p>
 
             <p class="text-secondary mt-4 opacity-5"><a class="text-white" href="https://www.nd.edu/copyright/"
-                  target="_blank">Copyright</a> <i class="fad fa-copyright mr-2 text-secondary"></i><span
-                  id="footer-year" class="text-muted"></span> &nbsp;<a class="text-white" href="https://www.nd.edu/"
-                  target="_blank">University
-                  of Notre Dame</a></p>
+                  target="_blank">Copyright</a><i class="fa-solid fa-copyright mx-2 text-secondary"></i><span
+                  id="footer-year" class="text-muted"></span><a class="text-white ml-2" href="https://www.nd.edu/"
+                  target="_blank">University of Notre Dame</a></p>
          </div>
 
          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 bg-nd-footer-blue text-white pt-5 pb-2 px-4">
@@ -49,27 +28,27 @@
                <ul class="list-group list-group-flush m-0 pl-1">
                   <li class="list-group-item py-1 bg-transparent border-0">
                      <a href="https://search.nd.edu/" class="text-white" target="_blank"><i
-                           class="fa-regular fa-search mr-3"></i>Search</a>
+                           class="fa-solid fa-search mr-3"></i>Search</a>
                   </li>
                   <li class="list-group-item py-1 bg-transparent border-0">
                      <a href="https://mobile.nd.edu/" class="text-white" target="_blank"><i
-                           class="fa-regular fa-mobile-phone mr-3"></i>Mobile App</a>
+                           class="fa-solid fa-mobile-phone mr-3"></i>Mobile App</a>
                   </li>
                   <li class="list-group-item py-1 bg-transparent border-0">
                      <a href="https://news.nd.edu/" class="text-white" target="_blank"><i
-                           class="fa-regular fa-newspaper mr-3"></i>News</a>
+                           class="fa-solid fa-newspaper mr-3"></i>News</a>
                   </li>
                   <li class="list-group-item py-1 bg-transparent border-0">
                      <a href="https://events.nd.edu/" class="text-white" target="_blank"><i
-                           class="fa-regular fa-calendar mr-3"></i>Events</a>
+                           class="fa-solid fa-calendar mr-3"></i>Events</a>
                   </li>
                   <li class="list-group-item py-1 bg-transparent border-0">
                      <a href="https://www.nd.edu/visit/" class="text-white" target="_blank"><i
-                           class="fa-regular fa-person-walking mr-3"></i>Visit</a>
+                           class="fa-solid fa-person-walking mr-3"></i>Visit</a>
                   </li>
                   <li class="list-group-item py-1 bg-transparent border-0">
                      <a href="https://www.nd.edu/about/accessibility/" class="text-white" target="_blank"><i
-                           class="fa-regular fa-wheelchair-move mr-3"></i>Accessibility</a>
+                           class="fa-solid fa-wheelchair-move mr-3"></i>Accessibility</a>
                   </li>
                </ul>
             </div>
@@ -112,5 +91,9 @@
    $(document).ready(function () {
       // put tooltips include here so it loads after dynamically loaded DOM elements
       $('[data-toggle="tooltip"]').tooltip();
+
+      // Load the copyright year
+      const thisYear = new Date().getFullYear();
+      $("#footer-year").text(thisYear);
    });
 </script>
