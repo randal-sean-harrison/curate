@@ -1,0 +1,134 @@
+:root {
+  /* root color variables */
+  --midnight-blue: #0c2340;
+  --navy-blue: #143865;
+  --nd-footer-blue: #143865;
+  --bright-blue: #007bff;
+  --nd-dark-blue: #0c223f;
+  --nd-blue: #0d2b58;
+  --light-grey-body: #fafafa;
+  --ghost-white: #f5f5fA;
+  --alice-blue: aliceblue;
+  --footer-slate: #e6e8f1;
+  --white: white;
+  --body-font: #666;
+  --slate-gray: lightslategray;
+  --silver: silver;
+  --graphite: #506578;
+  --trench-blue: #406885;
+  --light-blue: #d0e9fe;
+  --alice-blue: aliceblue;
+  --chocolate: chocolate;
+  --page-bg: #f0f3f6;
+  --page-bg: #f6f9fc;
+  --ghostwhite: ghostwhite;
+  --unemployed-red: #db4c3f;
+  --employee-green: mediumseagreen;
+  --manager-purple: mediumorchid;
+  --owner-blue: dodgerblue;
+  --skyscraper-green: #d3d9d7;
+  --house-green: green;
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Figtree', Helvetica, Arial, sans-serif;
+  color: var(--graphite);
+  font-size: 1.1rem;
+}
+
+
+.golden-top {
+  border-top: 5px solid var(--metallic-gold);
+}
+
+/* Colors ------------------------------------------ */
+.midnight-blue {
+  color: var(--midnight-blue);
+}
+
+.navy-blue {
+  color: var(--navy-blue);
+}
+
+.gold {
+  color: var(--gold);
+}
+
+/* .metallic-gold {
+  color: var(--metallic-gold);
+}
+
+.bright-yellow {
+  color: var(--bright-yellow);
+}
+
+.light-yellow {
+  color: var(--light-yellow);
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.maroon {
+  color: var(--maroon);
+}
+
+.bright-red {
+  color: var(--bright-red);
+}
+
+.olive-green {
+  color: var(--olive-green);
+}
+
+.moss-green {
+  color: var(--moss-green);
+}
+
+.forest-green {
+  color: var(--forest-green);
+}
+
+.dark-brown {
+  color: var(--dark-brown);
+}
+
+.plum {
+  color: var(--plum);
+}
+
+.brown {
+  color: var(--brown);
+}
+
+.chocolate {
+  color: var(--chocolate) !important;
+}
+
+.light-slate {
+  color: var(--light-slate);
+} */
+
+/* Backgrounds ----------------------------------- */
+/* ND background colors ------------------- */
+.bg-midnight-blue {
+  background-color: var(--midnight-blue) !important;
+}
+
+.bg-nd-footer-blue {
+  background: var(--nd-footer-blue);
+}
+
+.bg-navy-blue {
+  background-color: var(--navy-blue);
+}
+
+.bg-gold {
+  background-color: var(--nd-gold);
+}
