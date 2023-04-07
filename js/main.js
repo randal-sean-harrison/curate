@@ -16,7 +16,7 @@ function scrollToElement(elementId) {
   const element = $('#' + elementId);
   const offsetTop = element.offset().top;
   const scrollHeight = Math.abs($(window).scrollTop() - offsetTop);
-  const duration = Math.min(scrollHeight / 2, 1000); // medium speed
+  const duration = Math.min(scrollHeight / 2, 750); // medium speed
 
   $('html, body').animate({
     scrollTop: offsetTop

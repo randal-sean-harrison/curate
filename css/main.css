@@ -67,7 +67,7 @@ h1 {
 
 /* Colors ------------------------------------------ */
 .midnight-blue {
-  color: var(--midnight-blue);
+  color: var(--midnight-blue) !important;
 }
 
 .navy-blue {
@@ -166,4 +166,9 @@ h1 {
 #topper:hover {
   background-color: var(--bright-blue);
   color: var(--white);
+}
+
+
+.lead {
+  font-size: 1.5rem;
 }
