@@ -5,6 +5,7 @@
   --nd-footer-blue: #143865;
   --metallic-gold: #ae9142;
   --bright-yellow: #ffcf01;
+  --gold: #d39f10;
   --bright-blue: #007bff;
   --nd-dark-blue: #0c223f;
   --nd-blue: #0d2b58;
@@ -86,6 +87,10 @@ h1 {
   stroke-width: 0.75;
 }
 
+.metallic-gold {
+  color: var(--metallic-gold);
+}
+
 /* Backgrounds ----------------------------------- */
 .bg-midnight-blue {
   background-color: var(--midnight-blue) !important;
@@ -103,7 +108,62 @@ h1 {
   background-color: var(--nd-gold);
 }
 
+.bg-light {
+  background: #f6f9fc;
+}
+
+.bg-gold {
+  background: var(--gold);
+}
+
 /* Utility Classes ------------------------------- */
 .display-5 {
   font-size: 2.75rem;
+}
+
+.display-6 {
+  font-size: 2rem;
+}
+
+.border-gold {
+  border: 1px solid var(--gold);
+}
+
+.small-caps {
+  font-variant: small-caps;
+  font-weight: 400;
+}
+
+.badge-gold {
+  background: var(--gold);
+}
+
+.inherit-size {
+  font-size: inherit;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Scroll to top button ------------------------- */
+#topper {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--bright-blue);
+  color: var(--white) !important;
+  padding: 8px 4px 10px 4px;
+  border-radius: 3px 0 0 3px;
+  font-size: 1rem;
+  cursor: pointer !important;
+}
+
+#topper:hover {
+  background-color: var(--bright-blue);
+  color: var(--white);
 }

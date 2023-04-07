@@ -40,18 +40,70 @@
    <title>CurateND</title>
 </head>
 
-<body>
+<body id="top">
    <!-- Main content here -->
    <header class="mb-5"></header>
 
    <main id="wrapper" class="container-fluid pt-2">
       <div class="row">
-         <div class="col-sm-12">
-            <h1 class="display-3 letter-spaced slab text-center metallic-gold">ABOUT</h1>
+         <div class="col-sm-12 p-4">
+
+            <!-- Page Header -->
+            <h1 class="display-3 letter-spaced slab text-center mb-2">About Curate<span class="gold">ND</span>
+            </h1>
+            <p class="display-6 text-center mb-4">Curating Notre Dame’s Research and Scholarship</p>
+
+            <!-- Navigation badges -->
+            <div class="d-flex justify-content-center mb-5">
+               <p data-scroll-to="manage" class="pointer lead text-white slowScroll"><a
+                     class='inherit-size badge badge-gold badge-pill mx-2 py-2 px-3 text-white'><i
+                        class="fa-solid fa-users fa-fw mr-2 text-white"></i> Manage</a></p>
+               <p data-scroll-to="preserve" class="pointer lead text-white slowScroll"><a
+                     class='inherit-size badge badge-gold badge-pill mx-2 py-2 px-3 text-white'><i
+                        class="fa-solid fa-database fa-fw mr-2 text-white"></i>Preserve</a>
+               </p>
+               <p data-scroll-to="discover" class="pointer lead text-white slowScroll"><a
+                     class='inherit-size badge badge-gold badge-pill mx-2 py-2 px-3 text-white'><i
+                        class="fa-solid fa-magnifying-glass fa-fw mr-2 text-white"></i>Discover</a>
+               </p>
+               <p data-scroll-to="share" class="pointer lead text-white slowScroll"><a
+                     class='inherit-size badge badge-gold badge-pill mx-2 py-2 px-3 text-white'><i
+                        class="fa-solid fa-share-nodes fa-fw mr-2 text-white"></i>Share</a></p>
+            </div>
+         </div>
+         <!-- col-sm-12 -->
+
+         <!-- Manage Section ------------------------------------------ -->
+         <div class="col-sm-12 bg-light p-5" id="manage">
+            <p class="text-center gold mb-0"><i class="fa-solid fa-users fa-fw fa-3x"></i></p>
+            <p class="gold display-4 text-center small-caps">manage</p>
+            <p class="lead text-center mb-5"><em>Do you need to curate and elevate your entire portfolio of work?</em>
+            </p>
+         </div>
+         <div class="col-sm-6 bg-light p-5">
+            <ul class="list-group list-group-flush">
+               <li class="list-group-item"><i class="fa-regular fa-square-check fa-fw mr-3"></i>Working with a team?
+               </li>
+               <li class="list-group-item"><i class="fa-regular fa-square-check fa-fw mr-3"></i>Need a data management
+                  plan?</li>
+               <li class="list-group-item"><i class="fa-regular fa-square-check fa-fw mr-3"></i>Need to regulate levels
+                  of access</li>
+               <li class="list-group-item"><i class="fa-regular fa-square-check fa-fw mr-3"></i>Working with
+                  supplemental materials? Multiple formats?</li>
+            </ul>
+         </div>
+         <div class="col-sm-6 bg-light p-5">
+            <p>CurateND is a research portal that manages research portfolios on various levels. It offers
+               streamlined consultation for
+               creating data management plans to meet funding mandates. Upon deposit, you can control access
+               privileges and embargo
+               periods. CurateND accepts and preserves files of any format, including datasets, articles, images,
+               videos, and
+               presentations. You can deposit and showcase your portfolio and supplementary materials as desired.</p>
          </div>
 
       </div>
-      <!-- col-sm-12 -->
+      <!-- row -->
 
       <!-- Load footer dynamically -->
       </div>
@@ -59,6 +111,10 @@
    </main>
 
    <footer></footer>
+
+   <!-- Scroll to top button -->
+   <a role="button" id="topper" class="btn" data-scroll-to="top"><i class="fa-solid fa-fw fa-2x fa-angle-up"
+         aria-hidden="true"></i></a>
 
    <!-- jquery JS minified -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
