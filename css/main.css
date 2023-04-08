@@ -109,11 +109,15 @@ h1 {
 }
 
 .bg-light {
-  background: #f6f9fc;
+  background: #f6f9fc !important;
 }
 
 .bg-gold {
   background: var(--gold);
+}
+
+.bright-blue {
+  color: var(--bright-blue);
 }
 
 /* Utility Classes ------------------------------- */
@@ -172,3 +176,8 @@ h1 {
 .lead {
   font-size: 1.5rem;
 }
+
+/* policies page ------------------------------------ */
+#policies-nav .nav-link:not(.active) {
+  background-color: #f6f9fc !important;
+} 

@@ -1,74 +1,470 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Analytics -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicons -->
-    <link rel="icon" href="img/favicons/favicon.ico" sizes="any" />
-    <!-- 32×32 -->
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-    <!-- 180×180 -->
-    <link rel="manifest" href="img/favicons/manifest.webmanifest" />
+  <!-- Google Analytics -->
 
-    <!-- jQuery UI css -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <!-- jQuery UI css -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-    <!-- Google Font Albert Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Leckerli+One&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-    <!-- Google Font EB Garamond -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet" />
+  <!-- Google Font Figtree -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,600;1,400&display=swap&family=Golos+Text:wght@600&display=swap"
+    rel="stylesheet">
 
-    <!-- Fontawesome icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fontawesome icons CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Main local styles -->
-    <link rel="stylesheet" href="css/main.css" />
+  <!-- Main local styles -->
+  <link rel="stylesheet" href="css/main.css" />
 
-    <title>Curate ND | Policies</title>
-  </head>
+  <title>CurateND</title>
+</head>
 
-  <body>
-    <!-- Main content here -->
-    <header></header>
+<body id="top" data-page-name="Governing Policies">
+  <!-- Main content here -->
+  <header class="mb-5"></header>
 
-    <main id="wrapper" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12"></div>
-        <!-- col-sm-12 -->
+  <main id="wrapper" class="container-fluid p-5">
+    <div class="row">
+      <div class="col-sm-12 p-4 mb-5">
 
-        <!-- Load footer dynamically -->
+        <!-- Page Header -->
+        <h1 class="display-3 letter-spaced slab text-center mb-2 midnight-blue">Governing Policies</h1>
+        <p class="display-6 text-center mb-4">Governing policies for the CurateND institutional repository</p>
+
       </div>
-      <!-- row -->
-    </main>
+      <!-- col-sm-12 -->
 
-    <footer></footer>
+      <!-- Left navigation ------------------------------------------- -->
+      <div class="col-sm-4 mt-3">
+        <ul class="nav flex-column nav-pills" id="policies-nav" role="tablist">
+          <li class="nav-item mb-3">
+            <a class="nav-link active" href="#panel-scope" data-toggle="tab">Scope</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="nav-link" href="#panel-content" data-toggle="tab">Content</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="nav-link" href="#panel-privacy" data-toggle="tab">Privacy</a>
+          </li>
+          <li class="nav-item mb-3">
+            <a class="nav-link" href="#panel-preservation" data-toggle="tab">Preservation</a>
+          </li>
+        </ul>
+      </div>
+      <!-- content area ------------------------------------------- -->
+      <div class="col-sm-8">
+        <div class="tab-content" id="tab-content-4101993">
+          <div class="ml-2 tab-pane fade show active" id="panel-scope" role="tabpanel" aria-labelledby="...">
+            <p class="gold display-4 small-caps">scope</p>
+            <hr>
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Access</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>
+                  Contributors can set specific access permissions for both the content's record and the content itself.
+                  Content submitted
+                  can be:
+                </p>
+                <ul>
+                  <li>Public&mdash;This content is visible to all users and may be indexed by search engines.</li>
+                  <li>Embargo then Public&mdash;This content is private until the date set by an editor, at which time
+                    the content becomes publicly
+                    available.</li>
+                  <li>University of Notre Dame&mdash;This content is only visible to patrons with an active Notre Dame
+                    NetID.</li>
+                  <li>Private&mdash;This content is only visible to the editors.</li>
+                </ul>
+                <p>
+                  Please note: Access level does not correspond to particular licenses or copyright permissions. Authors
+                  are responsible for assigning an appropriate access level for their content.
+                </p>
 
-    <!-- jquery JS minified -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- jquery ui -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+              </div>
+            </div>
 
-    <!-- popper minified -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Deposit and Access Fees</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>
+                  There are no fees associated with depositing content in CurateND. Content that is deposited in
+                  CurateND is available
+                  without charge. However, some records in CurateND link to externally hosted or enhanced quality
+                  resources that may
+                  require access fees.
+                </p>
 
-    <!-- bootstrap JS minified -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
 
-    <!-- Your Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Depositors</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>
+                  Individuals looking to deposit content must be affiliated with the University of Notre Dame
+                  (hereafter ND) and have an
+                  active NetID to log-in to CurateND and submit work to the repository. Depositors can include:
+                </p>
+                <ul>
+                  <li>ND faculty members (current, emeritus, and retired)</li>
+                  <li>ND staff</li>
+                  <li>ND graduate students and postdoctoral fellows</li>
+                  <li>ND undergraduate students</li>
+                  <li>ND departments, institutes, and centers</li>
+                </ul>
+
+                <p>
+                  Current ND affiliates may deposit materials published or created before the authors joined ND, as long
+                  as the authors
+                  are currently affiliated with ND.
+                </p>
+
+                <p>
+                  Previous ND affiliates, including alumni, may also contribute content as long as the materials to be
+                  deposited were
+                  published or created by the authors while affiliated with ND. Contributors or owners who have left
+                  Notre Dame should
+                  contact the support team at curate@nd.edu for any changes or updates to previously contributed content
+                  or to deposit
+                  appropriate additional contributions.
+                </p>
+
+                <p>
+                  For those who choose to self-deposit, please know that we may review your deposit and contact you with
+                  questions about
+                  your content or recommendations to improve the record, such as by including additional project files
+                  or enhancing the
+                  description. If your project is especially complex or you are unsure of any aspect of the process, a
+                  member of the
+                  CurateND team can help you prepare and deposit your work(s).
+                </p>
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Intellectual Property</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>By depositing works in CurateND, you do not surrender any of the rights to your work (such as
+                  ownership, usage, etc.).
+                  Depositors must have the rights to submit the work;1 CurateND accepts no responsibility for work
+                  deposited without the
+                  appropriate rights. It is also the expectation that depositors will assign access permissions that
+                  allow the widest use
+                  possible. If you believe your materials were deposited without appropriate permissions, please
+                  contact the CurateND
+                  support team. If you would like assistance in understanding your author’s agreement, or to learn
+                  more about what rights
+                  you have retained, please contact our Scholarly Communications Librarian.</p>
+
+                <p>For more information, view <a href="agreement.html" target="_blank">the submission agreement</a>.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <!-- tab pane -->
+          <div class="ml-2 tab-pane fade" id="panel-content" role="tabpanel" aria-labelledby="...">
+            <p class="gold display-4 small-caps">content</p>
+            <hr>
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Content</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>
+                  Content submitted to the repository can be scholarly, creative, pedagogical, or research related
+                  materials that advance
+                  research for the greater scholarly community, regardless of digital format. This includes but is not
+                  limited to:
+                </p>
+                <ul>
+                  <li>artistic research outputs</li>
+                  <li>audio and video recordings</li>
+                  <li>campus-based publications</li>
+                  <li>course-based publications</li>
+                  <li>conference posters</li>
+                  <li>conference presentations</li>
+                  <li>datasets (datasets must be complete and must include a readme file. At this time, no
+                    classified/restricted/confidential data can be accepted.)</li>
+                  <li>dissertations</li>
+                  <li>exhibition documentation</li>
+                  <li>master’s and doctoral theses</li>
+                  <li>publications (including preprints)</li>
+                  <li>white papers</li>
+                  <li>working papers and technical reports</li>
+                </ul>
+                <p>
+                  <strong>Completeness</strong>&mdash;All deposited items should be in completed form; descriptive
+                  information can be updated after deposit,
+                  and additional
+                  files can be uploaded as necessary. Depositors are responsible for submitting appropriate descriptive
+                  metadata at the
+                  time of deposit of their content.
+                </p>
+
+                <p>
+                  <strong>Language</strong>&mdash;Materials do not need to be in English; when possible, an
+                  English-translation of the description is
+                  recommended to
+                  support discoverability. CurateND supports non-Roman alphabets, including Greek, Arabic, and Cyrillic
+                  characters. If you
+                  need assistance uploading this content or creating a description, please contact the CurateND support
+                  team.
+                </p>
+
+                <p>
+                  <strong>Multiple authors</strong>&mdash;Cross-institutional projects with multiple authors can be
+                  deposited into CurateND, so long as one
+                  author
+                  or contributor
+                  meets the depositor requirements and is willing to steward the content.
+                </p>
+
+                <p>
+                  <strong>Identifiable Information</strong>&mdash;CurateND does not and cannot accept works that contain
+                  Personally Identifiable Information (PII) or
+                  sensitive data as
+                  defined by the Office of Information Technology (OIT)
+                </p>
+
+                <p>
+                  <strong>University Records</strong>&mdash;CurateND does not accept official University Records, as
+                  defined in the University’s Records
+                  Management
+                  and Archives
+                  Policy. Please contact the University Archives if you need further assistance (archives@nd.edu)
+                </p>
+
+                <p>
+                  The CurateND support team will apply this policy to ongoing and future contributions; it does not
+                  apply retroactively.
+                </p>
+
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Content Retention</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>
+                  CurateND is intended to provide permanent access to and preservation of deposited content. As a member
+                  of a global
+                  family of institutional repositories, CurateND aspires to provide open and persistent access to its
+                  content. Deposits
+                  should be considered permanent.
+                </p>
+
+                <p>
+                  However, there are instances when content may need to be removed from the repository. Content may be
+                  removed for any
+                  number of reasons, such as copyright violations and sensitive data concerns. We will make reasonable
+                  efforts to contact
+                  the original depositor in the event content needs to be removed.
+                </p>
+
+                <p>After removal, the records of removed content will remain active, with the addition of the language:
+                  “This content has been removed by Hesburgh Libraries. For more information, please contact
+                  curate@nd.edu.” If you would like to request that content be removed for any reason, please contact
+                  the CurateND team (curate@nd.edu).</p>
+
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Content Review</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>Contributions will be reviewed to ensure all materials are described appropriately and conform to
+                  descriptive standards.
+                  This is to facilitate discovery and preservation of materials. Depositors may be contacted with
+                  questions or requests
+                  for additional information.</p>
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+
+
+          </div>
+          <!-- tab-pane -->
+          <div class="ml-2 tab-pane fade" id="panel-privacy" role="tabpanel" aria-labelledby="...">
+            <p class="gold display-4 small-caps">privacy</p>
+            <hr>
+
+            <p class="mb-4">CurateND collects various information on users who interact with the site in different ways:
+            </p>
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Browsing Help</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>When you access CurateND, our servers record information provided by your browser, such as IP
+                  address, time of visit(s),
+                  and type of request(s) (e.g., View or Download). This information is not distributed or shared. When
+                  content owners view
+                  the usage information of their items, all that is provided is time of visit and type of request.</p>
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Depositors</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+                <p>
+                  Depositors will be required to log in with their NetID and verify contact information upon account
+                  creation. Account
+                  information can be found and updated under “Manage,” and then by selecting “My Account.” This
+                  information is retained
+                  while you are active at the institution and up to six months after you leave. The data are used for
+                  internal purposes
+                  only.
+                </p>
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Help Request</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+
+                <p>When you submit a request to the CurateND team, your email address is collected, along with any other
+                  information you
+                  provide. We use this information to follow up on your request, but the information is not shared
+                  beyond the CurateND
+                  team.
+                </p>
+                <p>For more information about Hesburgh Libraries and our commitment to privacy, please visit the <a
+                    href="https://www.library.nd.edu/privacy-statement" target="_blank">
+                    Privacy
+                    Statement
+                  </a> and
+                  <a href="https://drive.google.com/file/d/1y82rSY1aQG2w7rFla-wc_UmsNht-ghcB/preview"
+                    target="_blank">FAQ</a>.
+                </p>
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+
+
+          </div>
+          <!-- tab-pane -->
+
+          <div class="ml-2 tab-pane fade" id="panel-preservation" role="tabpanel" aria-labelledby="...">
+            <p class="gold display-4 small-caps">presentation</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    <!-- row -->
+
+    <!-- Load footer dynamically -->
+    </div>
+    <!-- row -->
+  </main>
+
+  <footer></footer>
+
+  <!-- Scroll to top button -->
+  <a role="button" id="topper" class="btn" data-scroll-to="top"><i class="fa-solid fa-fw fa-2x fa-angle-up"
+      aria-hidden="true"></i></a>
+
+  <!-- jquery JS minified -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- jquery ui -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+    integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- popper minified -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <!-- bootstrap JS minified -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
+    integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Fontawesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Your Javascript -->
+  <script src="js/main.js"></script>
+
+
+
+</body>
+
 </html>
