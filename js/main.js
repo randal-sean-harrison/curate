@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-   // Load header and add tooltips dyamically ------------------------
+  // Load header and add tooltips dyamically ------------------------
   $("header").load("header.html", function () {
     console.log("Header loaded.");
     $('[data-toggle="tooltip"]').tooltip();
@@ -11,26 +10,29 @@ $(document).ready(function () {
     console.log("Footer loaded.");
   });
 
-// Slow scroll to clicked link ------------------------------------
-function scrollToElement(elementId) {
-  const element = $('#' + elementId);
-  const offsetTop = element.offset().top;
-  const scrollHeight = Math.abs($(window).scrollTop() - offsetTop);
-  const duration = Math.min(scrollHeight / 2, 750); // medium speed
+  // Slow scroll to clicked link ------------------------------------
+  function scrollToElement(elementId) {
+    const element = $("#" + elementId);
+    const offsetTop = element.offset().top;
+    const scrollHeight = Math.abs($(window).scrollTop() - offsetTop);
+    const duration = Math.min(scrollHeight / 2, 750); // medium speed
 
-  $('html, body').animate({
-    scrollTop: offsetTop
-  }, duration);
-}
+    $("html, body").animate(
+      {
+        scrollTop: offsetTop,
+      },
+      duration
+    );
+  }
 
-$('p[data-scroll-to]').on('click', function(event) {
-  event.preventDefault();
-  const elementId = $(this).data('scroll-to');
-  scrollToElement(elementId);
-});
+  $("p[data-scroll-to]").on("click", function (event) {
+    event.preventDefault();
+    const elementId = $(this).data("scroll-to");
+    scrollToElement(elementId);
+  });
 
-// Scroll to top button --------------------------------------------
-window.onscroll = function () {
+  // Scroll to top button --------------------------------------------
+  window.onscroll = function () {
     scrollFunction();
   };
 
@@ -57,6 +59,20 @@ window.onscroll = function () {
     );
   });
 
+  // Popovers
+  // Set options for popovers per page with javascript objects
+  $('[data-toggle="popover"]').popover({
+    container: "body",
+    animation: true,
+    html: true,
+    placement: "top",
+    trigger: "click",
+    offset: "10"
+  });
 
+  // Use this to allow popover to dismiss on clicking any element
+  $(".popover-dismiss").popover({
+    trigger: "focus"
+  });
 });
 // document.ready

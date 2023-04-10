@@ -45,6 +45,9 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
   <!-- Main local styles -->
   <link rel="stylesheet" href="css/main.css" />
 
@@ -53,14 +56,14 @@
 
 <body id="top" data-page-name="Governing Policies">
   <!-- Main content here -->
-  <header class="mb-5"></header>
+  <header></header>
 
   <main id="wrapper" class="container-fluid p-5">
     <div class="row">
       <div class="col-sm-12 p-4 mb-5">
 
         <!-- Page Header -->
-        <h1 class="display-3 letter-spaced slab text-center mb-2 midnight-blue">Governing Policies</h1>
+        <h1 class="display-4 letter-spaced slab text-center mb-2 midnight-blue">Governing Policies</h1>
         <p class="display-6 text-center mb-4">Governing policies for the CurateND institutional repository</p>
 
       </div>
@@ -87,7 +90,7 @@
       <div class="col-sm-8">
         <div class="tab-content" id="tab-content-4101993">
           <div class="ml-2 tab-pane fade show active" id="panel-scope" role="tabpanel" aria-labelledby="...">
-            <p class="gold display-4 small-caps">scope</p>
+            <p class="gold display-4 small-caps mb-3">scope</p>
             <hr>
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
@@ -100,16 +103,20 @@
                   can be:
                 </p>
                 <ul>
-                  <li>Public&mdash;This content is visible to all users and may be indexed by search engines.</li>
-                  <li>Embargo then Public&mdash;This content is private until the date set by an editor, at which time
+                  <li><strong>Public</strong>&mdash;This content is visible to all users and may be indexed by search
+                    engines.</li>
+                  <li><strong>Embargo then public</strong>&mdash;This content is private until the date set by an
+                    editor, at which time
                     the content becomes publicly
                     available.</li>
-                  <li>University of Notre Dame&mdash;This content is only visible to patrons with an active Notre Dame
+                  <li><strong>University of Notre Dame</strong>&mdash;This content is only visible to patrons with an
+                    active Notre Dame
                     NetID.</li>
-                  <li>Private&mdash;This content is only visible to the editors.</li>
+                  <li><strong>Private</strong>&mdash;This content is only visible to the editors.</li>
                 </ul>
                 <p>
-                  Please note: Access level does not correspond to particular licenses or copyright permissions. Authors
+                  Please note that access level does not correspond to particular licenses or copyright permissions.
+                  Authors
                   are responsible for assigning an appropriate access level for their content.
                 </p>
 
@@ -190,7 +197,12 @@
               <div class="card-body bg-white rounded">
                 <p>By depositing works in CurateND, you do not surrender any of the rights to your work (such as
                   ownership, usage, etc.).
-                  Depositors must have the rights to submit the work;1 CurateND accepts no responsibility for work
+                  Depositors must have the rights to submit the work. <span class="text-primary" data-html="true"
+                    data-container="body" data-toggle="popover" data-animation="true" data-placement="top"
+                    data-trigger="click" data-offset="0, 10" title=""
+                    data-content="See the University of Notre Dame’s Intellectual Property Policy for more information: <a href='https://policy.nd.edu/assets/203061/intellectualpropertypolicy.pdf' target='_blank'>https://policy.nd.edu/assets/203061/intellectualpropertypolicy.pdf</a>"><i
+                      class="bi bi-info-circle-fill pointer text-primary mr-2"></i>
+                  </span> CurateND accepts no responsibility for work
                   deposited without the
                   appropriate rights. It is also the expectation that depositors will assign access permissions that
                   allow the widest use
@@ -269,7 +281,12 @@
                   <strong>Identifiable Information</strong>&mdash;CurateND does not and cannot accept works that contain
                   Personally Identifiable Information (PII) or
                   sensitive data as
-                  defined by the Office of Information Technology (OIT)
+                  defined by the Office of Information Technology (OIT). <span class="text-primary" data-html="true"
+                    data-container="body" data-toggle="popover" data-animation="true" data-placement="top"
+                    data-trigger="click" data-offset="0, 10" title=""
+                    data-content="For more information, see the Knowledge Base article: <a href='https://nd.service-now.com/kb_view.do?sysparm_article=KB0013665' target='_blank'>https://nd.service-now.com/kb_view.do?sysparm_article=KB0013665</a>"><i
+                      class="bi bi-info-circle-fill pointer text-primary mr-2"></i>
+                  </span>
                 </p>
 
                 <p>
@@ -277,7 +294,11 @@
                   defined in the University’s Records
                   Management
                   and Archives
-                  Policy. Please contact the University Archives if you need further assistance (archives@nd.edu)
+                  Policy. <span class="text-primary" data-html="true" data-container="body" data-toggle="popover"
+                    data-animation="true" data-placement="top" data-trigger="click" data-offset="0, 10" title=""
+                    data-content="See the University Archives Records Management Policy: <a href='https://policy.nd.edu/assets/185265/records_management_archives_2015.pdf' target='_blank'>https://policy.nd.edu/assets/185265/records_management_archives_2015.pdf</a>"><i
+                      class="bi bi-info-circle-fill pointer text-primary mr-2"></i>
+                  </span> Please contact the University Archives if you need further assistance (archives@nd.edu)
                 </p>
 
                 <p>
@@ -412,9 +433,112 @@
           <!-- tab-pane -->
 
           <div class="ml-2 tab-pane fade" id="panel-preservation" role="tabpanel" aria-labelledby="...">
-            <p class="gold display-4 small-caps">presentation</p>
+            <p class="gold display-4 small-caps">preservation</p>
             <hr>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere corporis!</p>
+            <p class="mb-4"></p>As part of the Hesburgh Libraries’ mission to connect people to knowledge across time,
+            CurateND is
+            committed to
+            preserving deposits according to preservation practices. For that reason, all materials deposited in
+            CurateND will be
+            saved in two locations: an access copy maintained by Hesburgh Libraries and a preservation copy stored on
+            the
+            University’s tape storage system. The tape system will be backed up in Amazon Web Services (AWS), which
+            allows all
+            materials to have at least two copies stored in different geographical regions.</p>
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Persistent Identifiers</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+
+                <p><strong>CurateND Assigned Identifier</strong>&mdash;Every item and file stored in CurateND is given a
+                  unique eleven-character identifier. This identifier is permanent, and
+                  will never be revoked or reassigned to another work in CurateND. Since the CurateND Identifier is not
+                  a URL, it is not
+                  automatically resolvable to a web page. CurateND identifiers refer to a specific item but do not make
+                  a distinction
+                  between versions of that item (e.g. minor corrections to either the files or the metadata). All items
+                  are assigned a persistent URL based on the persistent identifier, which follow the pattern
+                  <code>https://curate.nd.edu/show/XXXXXXXXXXX</code> where "XXXXXXXXXXX" is the eleven- character
+                  CurateND Identifier for the item. This
+                  pattern works for both records and files.
+                </p>
+
+
+                <p><strong>Digital Object Identifier (DOI)</strong>&mdash;A DOI is the preferred way to cite materials
+                  in
+                  CurateND. A DOI can be created free of charge.
+
+                  If an item in CurateND has a CurateND-assigned DOI (i.e., a DOI that points to a CurateND web page as
+                  opposed to a
+                  publisher’s web page), then that DOI is guaranteed to always point to the item’s page in CurateND.
+
+                  CurateND DOIs will always point to an item’s information page in CurateND and not to any associated
+                  files to ensure
+                  compliance with the FAIR Guiding Principles for data management. <span class="text-primary"
+                    data-html="true" data-container="body" data-toggle="popover" data-animation="true"
+                    data-placement="top" data-trigger="click" data-offset="0, 10" title=""
+                    data-content="See: Wilkinson, Mark D.; Dumontier, Michel; Aalbersberg, IJsbrand Jan; Appleton, Gabrielle; et al. (15 March 2016). 'The FAIR Guiding Principles for scientific data management and stewardship'. Scientific Data. 3: 160018. <a href='https://doi.org/doi:10.1038/sdata.2016.18' target='_blank'>https://doi.org/doi:10.1038/sdata.2016.18</a>"><i
+                      class="bi bi-info-circle-fill pointer text-primary mr-2"></i>
+                  </span>
+
+                  DOIs can also be generated for grant applications as necessary.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Unrecoverable Data</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+
+                <p>In the event of a complete or partial digital object loss or corruption, the affected item(s) will be
+                  marked “lost” and
+                  any data file(s) will be marked “unavailable for download.” Partially lost or corrupted file(s) will
+                  be retained, and we
+                  will attempt to notify the content owner(s). If the affected digital object is a metadata record, the
+                  record will be
+                  marked “lost,” and the CurateND team will try to reconstruct the record as much as possible.
+                </p>
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+            <div class="card border-0">
+              <div class="card-header border-0 pb-0 bg-light text-dark">
+                <h4>Succession Plan</h4>
+              </div>
+              <div class="card-body bg-white rounded">
+
+                <p>
+                  In the event of significant changes to the repository’s level of funding, staffing, or other
+                  resources, or in the event
+                  that the repository itself ceases to exist, Hesburgh Libraries will make a reasonable effort to
+                  continue providing
+                  access to deposited content.
+                </p>
+
+                <p>
+                  As part of its commitment to providing long-term access to deposited content, CurateND has existing
+                  relationships with
+                  other trusted digital repositories, such as Academic Preservation (AP) Trust. Hesburgh Libraries and
+                  the Office of
+                  Information Technology (OIT) continually monitor the digital preservation landscape for other possible
+                  solutions which
+                  could be used on a contingency basis.
+                </p>
+
+              </div>
+              <!-- card-body -->
+            </div>
+            <!-- card -->
+
+
+
           </div>
         </div>
       </div>

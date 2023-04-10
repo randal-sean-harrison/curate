@@ -20,7 +20,6 @@
   --graphite: #506578;
   --trench-blue: #406885;
   --light-blue: #d0e9fe;
-  --alice-blue: aliceblue;
   --chocolate: chocolate;
   --page-bg: #f0f3f6;
   --page-bg: #f6f9fc;
@@ -48,6 +47,10 @@ h1 {
   color: var(--midnight-blue);
 }
 
+.card-header h4 button {
+  font-size: 1.25rem !important;
+}
+
 .letter-spaced {
   letter-spacing: 2px;
 }
@@ -70,6 +73,10 @@ h1 {
   color: var(--midnight-blue) !important;
 }
 
+.trench-blue {
+  color: var(--trench-blue) !important;
+}
+
 .navy-blue {
   color: var(--navy-blue);
 }
@@ -87,13 +94,29 @@ h1 {
   stroke-width: 0.75;
 }
 
+.silver {
+  color: var(--silver);
+}
+
 .metallic-gold {
   color: var(--metallic-gold);
+}
+
+.bright-blue {
+  color: var(--bright-blue);
 }
 
 /* Backgrounds ----------------------------------- */
 .bg-midnight-blue {
   background-color: var(--midnight-blue) !important;
+}
+
+.bg-trench-blue {
+  background-color: var(--trench-blue) !important;
+}
+
+.bg-alice-blue {
+  background-color: var(--alice-blue) !important;
 }
 
 .bg-nd-footer-blue {
@@ -114,10 +137,6 @@ h1 {
 
 .bg-gold {
   background: var(--gold);
-}
-
-.bright-blue {
-  color: var(--bright-blue);
 }
 
 /* Utility Classes ------------------------------- */
@@ -172,12 +191,68 @@ h1 {
   color: var(--white);
 }
 
-
 .lead {
   font-size: 1.5rem;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 /* policies page ------------------------------------ */
 #policies-nav .nav-link:not(.active) {
   background-color: #f6f9fc !important;
-} 
+}
+
+.input-group-append,
+.input-group-prepend {
+  background: transparent !important;
+}
+
+button:focus,
+.btn:focus,
+a:focus,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Rotate FAQ icons --------------------------------- */
+.fa-rotate-45 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.fa-rotate-90 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.get-started:hover {
+  background: var(--bright-blue);
+  color: white !important;
+  border: 1px solid var(--bright-blue);
+}
+
+.popover {
+  background: #f6f9fc;
+  font-size: 1.1rem;
+  color: var(--graphite) !important;
+  max-width: 375px !important;
+}
+
+.bs-popover-auto[x-placement^="top"] > .arrow::after, .bs-popover-top > .arrow::after {
+	bottom: 1px;
+	border-width: .5rem .5rem 0;
+	border-top-color: #f6f9fc;
+}

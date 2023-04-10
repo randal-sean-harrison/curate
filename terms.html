@@ -46,131 +46,35 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Main local styles -->
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" media="screen" href="css/main.css" />
 
   <title>CurateND</title>
 </head>
 
 <body id="top" data-page-name="Terms of Service">
   <!-- Main content here -->
-  <header class="mb-5"></header>
+  <header></header>
 
-  <main id="wrapper" class="container-fluid p-5">
+  <main id="wrapper" class="container p-5">
     <div class="row">
       <div class="col-sm-12 p-4 mb-5">
 
         <!-- Page Header -->
-        <h1 class="display-3 letter-spaced slab text-center mb-2 midnight-blue">Terms of Service</h1>
-        <p class="display-6 text-center mb-4">The terms of service agreement is blah blah...</p>
+        <h1 class="display-4 letter-spaced slab text-center mb-2 midnight-blue">Terms of Service</h1>
+        <p class="display-6 text-center mb-4">CurateND is provided according to the following terms</p>
 
       </div>
       <!-- col-sm-12 -->
 
-      <!-- Left column / Table of contents ----------------------- -->
-      <div class="col-sm-4">
-        <!-- search -->
-        <!-- <div id="search-box" class="shadow-sm">
-            <div class="form-group">
-              <div class="input-group border-0">
-                <div class="input-group-prepend">
-                  <span class="input-group-text border-0"><i class="fad fa-search fa-fw fa-lg graphite"></i></span>
-                </div>
-                <input type="text" class="form-control form-control" aria-label="" name="brainstorm-search" id="search-input" placeholder="Search ..." autocomplete="off">
-                <div class="input-group-append" id="search-clear-button">
-                  <span class="input-group-text border-0"><i class="fad fa-sync-alt bright-blue fa-fw fa-lg pointer sm-del"></i></span>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-        <p class="text-right mt-n3 mr-2"><span id="show-hide-types" class="bright-blue uncheck-types pointer"
-            role="button">Hide all</span></p>
-        <ul class="list-group px-2 py-3" id="rule-types">
-          <li data-filter="rules-objective"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-objective">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>General
-          </li>
-          <li data-filter="rules-winning-losing"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-winning-losing">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Changes to
-            Terms of Service are binding
-          </li>
-          <li data-filter="rules-bankruptcy"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-bankruptcy">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Copyright
-            and Use of CurateND Content
-          </li>
-          <li data-filter="rules-turns"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-taking-turns">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Special
-            Permissions
-          </li>
-          <li data-filter="rules-improving-properties"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-improving-properties">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>CurateND
-            Access Levels
-          </li>
-          <li data-filter="rules-politics"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-changing-rules">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Use of
-            CurateND Site and Content
-          </li>
-          <li data-filter="rules-change-cards"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-change-cards">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Fair Use
-            and Other Lawful Uses
-          </li>
-          <li data-filter="rules-tokens"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-tokens">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Reserved
-            Rights and Obtaining Permissions
-          </li>
-          <li data-filter="rules-squares"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-squares">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Disclaimer
-            of Warranties
-          </li>
-          <li data-filter="rules-squares"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-squares">
-            <span class="checkbox-icon"><i
-                class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Limitations of Liability and Remedies
-          </li>
-          <li data-filter="rules-squares"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-squares">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Indemnity
-          </li>
-          <li data-filter="rules-squares"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-squares">
-            <span class="checkbox-icon"><i class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Applicable
-            Law and Jurisdiction
-          </li>
-          <li data-filter="rules-squares"
-            class="list-group-item list-group-item-action mb-3 bg-light pointer rounded-0 filter-type-checkbox border-0"
-            id="type-squares">
-            <span class="checkbox-icon"><i
-                class="fa-solid fa-check-square fa-lg mr-3 bright-blue"></i></span>Termination
-          </li>
-        </ul>
-      </div>
-      <!-- .col-sm-4 -->
-
-      <div class="col-sm-8">
+      <div class="col-sm-12">
         <div class="row">
-
+          <div class="col-sm-12">
+            <p class="mb-4 text-right"><a type="button" class="btn btn-primary text-light"
+                href="https://docs.google.com/document/d/1peK3rJiAQe5gJY-lzGL1Ic472TzMJAYQFeSAnhWhN5E/edit?usp=sharing"
+                target="_blank"><i class="fa-solid fa-file-pdf mr-2"></i>Print</a></p>
+          </div>
           <!-- General ------------------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="general">
+          <div class="col-sm-12 content-card mb-3 px-3" id="general">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>General</h4>
@@ -189,7 +93,7 @@
             </div>
           </div>
           <!-- Changes to Terms of Service are Binding ------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="changes">
+          <div class="col-sm-12 content-card mb-3 px-3" id="changes">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Changes to Terms of Service are Binding</h4>
@@ -202,7 +106,7 @@
               </div>
             </div>
           </div><!-- Copyright and use of CurateND Content ------------------------ -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Copyright and Use of CurateND Content</h4>
@@ -228,7 +132,7 @@
                 for your uses of Content.</div>
             </div>
           </div><!-- Special permissions ------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Special Permissions</h4>
@@ -241,21 +145,21 @@
                 users.</div>
             </div>
           </div><!-- CurateND Access Levels ------------------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>CurateND Access Levels</h4>
               </div>
               <div class="card-body bg-white rounded">CurateND often makes its Content available to the general public.
                 However, some of the Content on this Site may have
-                been been made available only to University community users or other user subgroups by the depositor.
+                been made available only to University community users or other user subgroups by the depositor.
                 Such Content
                 cannot be used, downloaded, or distributed outside the University community (or subgroup identified)
                 without the
                 specific permission of the depositor.</div>
             </div>
           </div><!-- Use of CurateND Site and Content ----------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Use of CurateND Site and Content</h4>
@@ -298,7 +202,7 @@
                 by us.</div>
             </div>
           </div><!-- Fair Use and Other Lawful Uses --------------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Fair Use and Other Lawful Uses</h4>
@@ -311,7 +215,7 @@
                 is encouraged.</div>
             </div>
           </div><!-- Reserved Rights and Obtaining Permissions ------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Reserved Rights and Obtaining Permissions</h4>
@@ -327,14 +231,14 @@
                 determining whether permission is needed to make any use of the Content that you wish to make.</div>
             </div>
           </div><!-- Disclaimer of Warranties --------------------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Disclaimer of Warranties</h4>
               </div>
               <div class="card-body bg-white rounded">The site and the content are provided “as is.” To the fullest
                 extent permitted by applicable law, we disclaim all
-                waranties of any kind (express, implied or otherwise) regarding the site or the content, including but
+                warranties of any kind (express, implied or otherwise) regarding the site or the content, including but
                 not limited to
                 any implied warranties of merchantability, fitness for a particular purpose, ownership, and
                 non-infringement. We make no
@@ -348,7 +252,7 @@
               </div>
             </div>
           </div><!-- Limitations of Liability and Remedies -------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Limitations of Liability and Remedies</h4>
@@ -367,7 +271,7 @@
                 law.</div>
             </div>
           </div><!-- Indemnity ---------------- ------------------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Indemnity</h4>
@@ -381,7 +285,7 @@
                 with any provision of these Terms of Use.</div>
             </div>
           </div><!-- Applicable Law and Jurisdiction ---------------------------------------------------- -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Applicable Law and Jurisdiction</h4>
@@ -399,14 +303,14 @@
                 of forum).</div>
             </div>
           </div><!-- Termination ------------------------------------------------------------------------ -->
-          <div class="col-sm-12 content-card mb-3" id="">
+          <div class="col-sm-12 content-card mb-3 px-3" id="">
             <div class="card border-0">
               <div class="card-header border-0 pb-0 bg-light text-dark">
                 <h4>Termination</h4>
               </div>
               <div class="card-body bg-white rounded">The permissions granted to you will terminate automatically upon
                 any breach by you of these Terms of Use. Additionally,
-                the University reserved the right to remove any CurateND content for any reason in its sole discretion.
+                the University reserved the right to remove any CurateND content for any reason at its sole discretion.
                 If we take down
                 or otherwise cease to make a work available as an item of Content, the permission granted to you
                 hereunder to use that

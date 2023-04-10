@@ -1,74 +1,592 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Analytics -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicons -->
-    <link rel="icon" href="img/favicons/favicon.ico" sizes="any" />
-    <!-- 32×32 -->
-    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
-    <!-- 180×180 -->
-    <link rel="manifest" href="img/favicons/manifest.webmanifest" />
+  <!-- Google Analytics -->
 
-    <!-- jQuery UI css -->
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="img/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+  <!-- jQuery UI css -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 
-    <!-- Google Font Albert Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Leckerli+One&display=swap" rel="stylesheet" />
-    
-    <!-- Google Font EB Garamond -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-    <!-- Fontawesome icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Font Figtree -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,600;1,400&display=swap&family=Golos+Text:wght@600&display=swap"
+    rel="stylesheet">
 
-    <!-- Main local styles -->
-    <link rel="stylesheet" href="css/main.css" />
+  <!-- Fontawesome icons CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>CurateND | FAQ</title>
-  </head>
+  <!-- Main local styles -->
+  <link rel="stylesheet" media="screen" href="css/main.css" />
 
-  <body>
-    <!-- Main content here -->
-    <header></header>
+  <title>CurateND</title>
+</head>
 
-    <main id="wrapper" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12"></div>
-        <!-- col-sm-12 -->
+<body id="top" data-page-name="FAQ">
+  <!-- Main content here -->
+  <header></header>
 
-        <!-- Load footer dynamically -->
+  <main id="wrapper" class="container p-5">
+    <div class="row">
+      <div class="col-sm-12 p-3 mb-3">
+
+        <!-- Page Header -->
+        <h1 class="display-4 letter-spaced slab text-center mb-2 midnight-blue">FAQ</h1>
+        <p class="display-6 text-center mb-4">For additional help, contact <a
+            href="mailto:curate@nd.edu">curate@nd.edu</a></p>
+
+        <!-- Search form -->
+        <form class="bg-alice-blue mt-5 p-2 pt-4 pb-2 rounded-sm">
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text border-0 bg-transparent"><i
+                    class="fa-solid fa-fw fa-2x fa-magnifying-glass opacity-50"></i></span>
+              </div>
+              <input type="text" class="form-control form-control-lg p-4 bg-transparent border-0 lead"
+                placeholder="Search..." aria-label="" name="faq-search" id="faq-search">
+              <div class="input-group-append">
+                <span class="input-group-text border-0 bg-transparent" id="search-reset"><i
+                    class="fa-solid fa-fw fa-2x fa-rotate bright-blue pointer"></i></span>
+              </div>
+            </div>
+          </div>
+        </form>
+
+
       </div>
-      <!-- row -->
-    </main>
+      <!-- col-sm-12 -->
 
-    <footer></footer>
+      <!-- FAQ Entries -->
+      <div class="col-sm-12" id="faqs">
 
-    <!-- jquery JS minified -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <p class="my-2 text-right"><button type="button" class="btn btn-primary text-light"><i
+              class="fa-solid fa-eye fa-fw mr-2"></i>Open all</button></p>
+        <div class="accordion" id="accordion98446337">
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-0">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel57215820" aria-expanded="false" aria-controls="header-0">What is CurateND?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+            </div>
+            <div id="panel57215820" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>
+                  CurateND is the institutional repository for the University of Notre Dame, managed by Hesburgh
+                  Libraries. It is for
+                  preserving and providing access to scholarship (e.g. articles, manuscripts, research data),
+                  pedagogical
+                  materials, and
+                  other scholarly material the university has acquired (e.g. the back catalog of the Notre Dame Press).
+                  One of the largest
+                  collections is the <strong>Electronic Dissertations and Theses</strong> since 2005.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-1">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel65017537" aria-expanded="false" aria-controls="header-1">What are the Governing
+                  Policies of CurateND?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
 
-    <!-- jquery ui -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            </div>
+            <div id="panel65017537" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>
+                  All of the governing policies for CurateND can be found on the <a href="policies.html">Governing
+                    policies</a> page.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-2">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel90893947" aria-expanded="false" aria-controls="header-2">How can CurateND help
+                  me?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
 
-    <!-- popper minified -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            </div>
+            <div id="panel90893947" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>CurateND helps researchers by providing a place to deposit data, articles, notes, grant outputs, and
+                  publications.</p>
+                <ul>
+                  <li>Scholarship deposited can be available to others without needing to put it on your own website.
+                    Content will be
+                    available and preserved even after you leave the University.</li>
+                  <li>CurateND can provide a <a href="https://en.wikipedia.org/wiki/Digital_object_identifier"
+                      target="_blank">Digital Object Identifier</a> (DOI), allowing you to cite these items in
+                    published scholarship. For
+                    example, you can deposit your dataset and then cite it using the DOI that CurateND creates.</li>
+                  <li>DOIs can be created to submit with grant applications and other publication proposals.</li>
+                </ul>
 
-    <!-- bootstrap JS minified -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js" integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-3">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel97592453" aria-expanded="false" aria-controls="header-3">Who may use
+                  CurateND?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
 
-    <!-- Your Javascript -->
-    <script src="js/main.js"></script>
-  </body>
+            </div>
+            <div id="panel97592453" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>
+                  Anyone may access the public content in CurateND. People with a valid NetID
+                  may log in to deposit items and to view
+                  files marked as "Notre Dame Only."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-4">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel28910367" aria-expanded="false" aria-controls="header-4">How do I log in to
+                  CurateND?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel28910367" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>
+                  CurateND uses the central university login service, so you log in with the
+                  same NetID and password used for other campus
+                  services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-5">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel48450549" aria-expanded="false" aria-controls="header-5">Can people undaffiliated
+                  with Notre Dame deposit works?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel48450549" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>Only people with a valid NetID can can deposit items. If you do not have a valid NetID and the items
+                  you would like to
+                  deposit were done either with a project affiliated with Notre Dame, or while you yourself were at
+                  Notre Dame, please
+                  <a href="https://forms.gle/wJssT1sZdvidoV8K9" target="_blank">contact CurateND support</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-6">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel62110515" aria-expanded="false" aria-controls="header-6">Do people who leave or
+                  graduate from Notre Dame still have access to CurateND?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel62110515" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>
+                  People who leave or graduate from Notre Dame can only upload files and view private items until their
+                  university NetID
+                  is deactivated, which usually happens a few months after leaving. After that, they can still search
+                  and view the public
+                  content in CurateND.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-7">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel95694088" aria-expanded="false" aria-controls="header-7">Are there any fees
+                  associated with depositing content in CurateND?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel95694088" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>There are no fees associated with depositing content in CurateND. Content that is deposited in
+                  CurateND is available
+                  without charge. However, some records in CurateND link to externally hosted or enhanced quality
+                  resources that may
+                  require access fees.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-8">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel73830590" aria-expanded="false" aria-controls="header-8">Is CurateND indexed by
+                  search engines?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel73830590" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>CurateND is indexed by all major search engines.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-9">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel34015956" aria-expanded="false" aria-controls="header-9">Will items I deposit
+                  appear in the Library Catalog?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel34015956" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>Some items, such as dissertations, are added to the library catalog. Other items, such as
+                  publications, are in the
+                  catalog because publishers have already provided records for them. In that case, if a copy of the
+                  article is available
+                  publicly in CurateND, then it will be linked to from the library catalog page for the article.
+                  Otherwise, items in
+                  CurateND are not automatically added to the library catalog at the moment. Please contact <a
+                    href="https://forms.gle/wJssT1sZdvidoV8K9" target="_blank">contact CurateND support</a> if
+                  you would like your item to be discoverable in the catalog.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-10">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel94728728" aria-expanded="false" aria-controls="header-10">What is a DOI?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel94728728" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>A DOI is an <a href="https://www.doi.org/" target="_blank">international standard (ISO 26324)</a> for
+                  identifying electronic documents, such as journal articles or
+                  datasets. It is widely used for academic citations since they are designed to persist over the long
+                  term. CurateND can
+                  either record the DOI of items that already have one (i.e. published articles), or it can assign one
+                  upon request.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-11">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel38672985" aria-expanded="false" aria-controls="header-11">What are persistent
+                  URLs?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel38672985" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>A persistent URL (PURL) is a URL that does not break. It is expected to work and return documents
+                  from CurateND for a
+                  long time, where a “long time” is more than ten years. On CurateND, the URLs in the form
+                  <code>https://curate.nd.edu/show/XXXXX</code> and <code>https://curate.nd.edu/download/XXXXX</code>,
+                  where XXXXX is an 11 character identifier,
+                  are considered PURLs, and will be preserved even as the rest of the website evolves.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-12">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel3698725" aria-expanded="false" aria-controls="header-12">Do I relinquish my rights
+                  to my work by depositing it?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel3698725" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>No. You keep all your rights.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-13">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel53789032" aria-expanded="false" aria-controls="header-13">What licensing options
+                  are available in CurateND?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel53789032" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>CurateND allows users to assign content a license of their choosing. Licenses can range from an "all
+                  rights reserved",
+                  to a Creative Commons license, to a CC0 (public domain). For all of the licenses available in
+                  CurateND, view the <a href="licenses.html">
+                    List of
+                    Licensing Options
+                  </a>. The Creative Commons licenses is a set of licenses providing others various degrees
+                  of permission for
+                  use. Some of these permissions require attribution, allow for commercial use and re-use, or permit
+                  others to make
+                  derivative works. For more information on them, refer to the Creative Commons License Chooser tool.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-14">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel96173199" aria-expanded="false" aria-controls="header-14">How do I deposit a
+                  dissertation?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel96173199" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>Submit electronic dissertations for fulfilling Graduate School requirements using <a
+                    href="https://deposit.library.nd.edu/areas/etd" target="_blank">this submission portal</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-15">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel47249880" aria-expanded="false" aria-controls="header-15">How do I deposit a large
+                  number of collections or files?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel47249880" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>If you have a large number of files—more than a dozen or so&mdash or large files (greater than 250
+                  MB), please <a href="https://forms.gle/wJssT1sZdvidoV8K9" target="_blank">
+                    contact
+                    CurateND support
+                  </a>, and we can work with you directly. We have tools to organize and upload large groups of files.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-16">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel81097038" aria-expanded="false" aria-controls="header-16">What does preservation
+                  mean? Can anyone edit the documents I deposit?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel81097038" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>Preservation means we are concerned about keeping your files intact in perpetuity. To do this we keep
+                  many copies of
+                  your files, and we verify that they do not change over time. If a copy should have an error or
+                  disappear, we will
+                  replace it using another copy. We also pay attention to obsolete file formats, and try to migrate your
+                  files into more
+                  modern formats. And we never edit your submitted files.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-17">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel16881959" aria-expanded="false" aria-controls="header-17">How can I keep a work
+                  private, but still allow collaborators unaffiliated with the university to view it?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel16881959" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>External collaborators can only view public content in the repository. If you are actively working
+                  with collaborators
+                  from different institutions, take a look at the <a href="https://osf.io/" target="_blank">Open Science
+                    Framework</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-19">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel4643387" aria-expanded="false" aria-controls="header-19">What is the difference
+                  between an article and a document?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel4643387" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>An article is a specific type of document. Other types of documents may include a poster, an image, a
+                  spreadsheet, and various other types of media.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-20">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel47628950" aria-expanded="false" aria-controls="header-20">Is there a work type for
+                  unpublished materials?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel47628950" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>No, items in the repository are centered around specific formats such as articles, books, data sets,
+                  collections, etc.
+                  Pick the format that most closely matches your unpublished materials when depositing them.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 mb-3">
+            <div class="card-header border-0 d-flex justify-content-between bg-light" id="header-21">
+              <h4 class="mb-0">
+                <button class="btn btn-link w-100 h-100 text-left" type="button" data-toggle="collapse"
+                  data-target="#panel82725518" aria-expanded="false" aria-controls="header-21">Is research done at the
+                  university the property of the university or researcher?</button>
+              </h4>
+              <p class="mt-2"><i class="fa-solid fa-fw fa-plus silver"></i></p>
+
+            </div>
+            <div id="panel82725518" class="collapse" aria-labelledby="headingOne" data-parent="">
+              <div class="card-body ml-3">
+                <p>It depends on the exact nature of your work and the kinds of items in your research output (e.g.
+                  articles, software,
+                  data sets). See <a href="http://policy.nd.edu/assets/203012/intellectualpropertypolicy.pdf"
+                    target="_blank">University Policy on Intellectual Property</a> for guidance. Section 2.2 may be the
+                  most
+                  useful: The
+                  University owns all copyrightable materials (including computer programs, software, or multi-media
+                  productions) that are
+                  works made for hire under copyright law or that are developed pursuant to University Work unless
+                  otherwise provided in
+                  this policy. Consistent with long-standing academic tradition, the University does not normally claim
+                  ownership of works
+                  such as textbooks, articles, papers, scholarly monographs, or artistic works. Creators therefore
+                  retain copyright in
+                  such works, unless such works are created under a grant or sponsored program that specifies ownership
+                  rights in some
+                  entity other than the Creator, such works are the subject of a contract modifying ownership rights, or
+                  rights in such
+                  works are otherwise addressed in this policy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- col-sm-12 -->
+
+
+    </div>
+    <!-- row -->
+
+    <!-- Load footer dynamically -->
+    </div>
+    <!-- row -->
+  </main>
+
+  <footer></footer>
+
+  <!-- Scroll to top button -->
+  <a role="button" id="topper" class="btn" data-scroll-to="top"><i class="fa-solid fa-fw fa-2x fa-angle-up"
+      aria-hidden="true"></i></a>
+
+  <!-- jquery JS minified -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- jquery ui -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+    integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- popper minified -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <!-- bootstrap JS minified -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"
+    integrity="sha512-7rusk8kGPFynZWu26OKbTeI+QPoYchtxsmPeBqkHIEXJxeun4yJ4ISYe7C6sz9wdxeE1Gk3VxsIWgCZTc+vX3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Fontawesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Your Javascript -->
+  <script src="js/main.js"></script>
+  <script src="js/faq.js"></script>
+
+</body>
+
 </html>
