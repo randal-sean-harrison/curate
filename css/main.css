@@ -245,14 +245,32 @@ a:focus,
 }
 
 .popover {
-  background: #f6f9fc;
+  background: ghostwhite;
   font-size: 1.1rem;
   color: var(--graphite) !important;
   max-width: 375px !important;
 }
 
-.bs-popover-auto[x-placement^="top"] > .arrow::after, .bs-popover-top > .arrow::after {
-	bottom: 1px;
-	border-width: .5rem .5rem 0;
-	border-top-color: #f6f9fc;
+.bs-popover-auto[x-placement^="top"] > .arrow::after,
+.bs-popover-top > .arrow::after {
+  bottom: 1px;
+  border-width: 0.5rem 0.5rem 0;
+  border-top-color: ghostwhite;
+}
+
+.navbar-toggler {
+  margin-bottom: 1rem;
+}
+
+/* Changing the header buttons on mobile for small screens -------------------- */
+
+@media screen and (max-width: 768px) {
+  #login-button, #dropdown-selector {
+    background: transparent !important;
+  }
+
+  #login-button a, #dropdown-selector a {
+    color: var(--graphite) !important;
+  }
+
 }
