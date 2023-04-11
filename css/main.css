@@ -9,27 +9,12 @@
   --bright-blue: #007bff;
   --nd-dark-blue: #0c223f;
   --nd-blue: #0d2b58;
-  --light-grey-body: #fafafa;
-  --ghost-white: #f5f5fa;
   --alice-blue: aliceblue;
-  --footer-slate: #e6e8f1;
   --white: white;
   --body-font: #666;
-  --slate-gray: lightslategray;
   --silver: silver;
   --graphite: #506578;
   --trench-blue: #406885;
-  --light-blue: #d0e9fe;
-  --chocolate: chocolate;
-  --page-bg: #f0f3f6;
-  --page-bg: #f6f9fc;
-  --ghostwhite: ghostwhite;
-  --unemployed-red: #db4c3f;
-  --employee-green: mediumseagreen;
-  --manager-purple: mediumorchid;
-  --owner-blue: dodgerblue;
-  --skyscraper-green: #d3d9d7;
-  --house-green: green;
 }
 
 html {
@@ -169,6 +154,25 @@ h1 {
   cursor: pointer;
 }
 
+.lead {
+  font-size: 1.5rem;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+/* Remove outlines ------------------------------ */
+
+button:focus,
+.btn:focus,
+a:focus,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
 /* Scroll to top button ------------------------- */
 #topper {
   display: none;
@@ -191,14 +195,6 @@ h1 {
   color: var(--white);
 }
 
-.lead {
-  font-size: 1.5rem;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
 /* policies page ------------------------------------ */
 #policies-nav .nav-link:not(.active) {
   background-color: #f6f9fc !important;
@@ -207,14 +203,6 @@ h1 {
 .input-group-append,
 .input-group-prepend {
   background: transparent !important;
-}
-
-button:focus,
-.btn:focus,
-a:focus,
-.form-control:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 /* Rotate FAQ icons --------------------------------- */
@@ -228,22 +216,14 @@ a:focus,
   transition-duration: 0.2s;
 }
 
-.fa-rotate-90 {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  transition-property: all;
-  transition-duration: 0.2s;
-}
-
+/* Get started buttons ------------------------------- */
 .get-started:hover {
   background: var(--bright-blue);
   color: white !important;
   border: 1px solid var(--bright-blue);
 }
 
+/* Popovers --------------------------------------------- */
 .popover {
   background: ghostwhite;
   font-size: 1.1rem;
@@ -256,10 +236,6 @@ a:focus,
   bottom: 1px;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: ghostwhite;
-}
-
-.navbar-toggler {
-  margin-bottom: 1rem;
 }
 
 /* Changing the header buttons on mobile for small screens -------------------- */
