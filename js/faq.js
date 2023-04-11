@@ -15,19 +15,6 @@ $(function () {
     $(".card").fadeIn().removeClass("d-none");
   });
 
-  // plus and x-mark toggler on opening/closing the accordions
-  $(".btn-link").on("click", function () {
-    // console.log($(this).parent().parent().find("p").children("i").classList());
-
-    if ($(this).parent().parent().find("svg").hasClass("fa-plus") ) {
-      $(this).parent().parent().find("svg").removeClass("fa-plus");
-      $(this).parent().parent().find("svg").addClass("fa-xmark");
-    } else {
-      $(this).parent().parent().find("svg").removeClass("fa-xmark");
-      $(this).parent().parent().find("svg").addClass("fa-plus");
-    }
-  });
-
   // open all accordion panels for possible printing or close -----------
   $("#faq-show-all").on("click", function () {
     console.log("clicked");
