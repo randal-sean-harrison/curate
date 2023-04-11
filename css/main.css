@@ -162,7 +162,7 @@ h1 {
   opacity: 0.5;
 }
 
-/* Remove outlines ------------------------------ */
+/* Search ------------------------------ */
 
 button:focus,
 .btn:focus,
@@ -172,6 +172,9 @@ a:focus,
   box-shadow: none;
 }
 
+input::placeholder {
+  color: silver !important;
+}
 
 /* Scroll to top button ------------------------- */
 #topper {
@@ -241,12 +244,13 @@ a:focus,
 /* Changing the header buttons on mobile for small screens -------------------- */
 
 @media screen and (max-width: 768px) {
-  #login-button, #dropdown-selector {
+  #login-button,
+  #dropdown-selector {
     background: transparent !important;
   }
 
-  #login-button a, #dropdown-selector a {
+  #login-button a,
+  #dropdown-selector a {
     color: var(--graphite) !important;
   }
-
 }
